@@ -1,0 +1,62 @@
+git : tools atau software yang berbasis vcs(version control system)
+github : layanan berbasis cloud yang membantu developer menyimpan
+	 dan mengelola source code/ file yang dibuat di Git.
+---------------------------------------------------------------------
+
+Git Remote / Git Command
+
+Working Directory : Direktori kerja
+|
+| Git Add .
+|
+Staging Area : Area file yang nantinya akan di commit ke repositori
+	       Local.
+|
+| Git Commit -m "Revisi 1"
+|
+
+Repository Local : Tempt penyimpanan File di local
+|
+| Git Push -u origin main
+|
+Github (cloud) : File tersebut akan dikirim/ push ke github.
+
+Langkah Membuat proyek yusrina
+
+1. git --version = mengecek status versi git yang tersinstall di 
+		   komputer kita.
+2. git config --global user.name "saputraananda" : mengkoneksikan username kita di github
+3. git config --global user.email saputraananda70@gmail.com : mengkoneksikan email kita di github
+4. mkdir yusrina = membuat direktori dengan nama yusrina
+5. cd yusrina = pindah direktori ke yusrina
+6. touch putra.txt = membuat file didalam direktori yusrina
+		     dengan nama putra.txt
+7. git init = inisiasi direktori kedalam pengawasan git
+
+Buat repositori Di github tanpa redme
+lalu copy git remotenya
+
+8. git remote add origin https://github.com/saputraaanda/proyekterakhir.git = mengalokasikan tempat repositorinya
+9. git branch -M main = pindah cabang ke cabang utama (main)
+10. git add . = mengirim file ke staging area
+11. git commit -m "revisi 1" = mengirim file yang sudah di commit ke local repository dan ditambahkan dengan deksripsi
+12. git push -u origin main = mengirim file ke cloud (github)
+
+-----------------------------------------------------------------------------
+
+Perintah Dasar Tambahan GIT
+
+1. echo "Asslamualaikum " >> yusrina.txt
+menambahkan assalamualaikum didalam file yusrina.txt
+2. Membuat repository, dengan perintah git init atau menggunakan git provider seperti GitHub
+3. Clone repository dengan perintah git clone
+4. Menambahkan file ke local repo dengan perintah git add
+5. Menyimpan revisi pada file dengan perintah git commit
+6. Membatalkan commit dengan perintah git reset atau git revert
+7. Membuat branch dengan perintah git checkout -b
+8. Menggabungkan dua branch dengan perintah git merge
+9. Melihat status dari working directory dengan perintah git status
+10.Mengatur koneksi ke remote repository dengan perintah git remote
+11. Download commit dan update local repository dengan perintah git fetch dan git pull
+12. Upload / transfer commit dengan perintah git push
+
